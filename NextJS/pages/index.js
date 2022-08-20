@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../comps/Header';
@@ -76,7 +77,7 @@ export default function Home({ p }) {
               <label >Select your Role:</label>
               <select name="select-choice" id="select-choice" onChange={(e) => setUserRole(+e.target.value)}>
                 {role.map((item, i) => (
-                  <option value={i} >{role[i]}</option>
+                  <option key={i} value={i} >{role[i]}</option>
                 ))}
               </select>
             </div>
@@ -93,7 +94,7 @@ export default function Home({ p }) {
               </tr>
 
               {data.map((item, i) => (
-                <tr>
+                <tr key={i}>
                   <td>{item[1]}</td>
                   <td>{item[2]}</td>
                 </tr>
