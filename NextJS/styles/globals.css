@@ -26,6 +26,16 @@ a {
   }
 }
 
+.head-left {
+  flex: auto;
+  display: flex;
+  margin: 20px;
+}
+
+.head-left p {
+  cursor: pointer;
+  margin-right: 15px;
+}
 .header {
   position: fixed;
   width: 100%;
@@ -52,7 +62,6 @@ a {
 
 .connect:hover {
   border-color: #fff;
-
 }
 
 .pointer {
@@ -140,7 +149,7 @@ input {
   width: 320px;
   color: #aaa;
   background-color: #392f7e;
-  border: .1em solid #ddd;
+  border: 0.1em solid #ddd;
   border-radius: 4px;
 }
 
@@ -154,8 +163,8 @@ select,
 textarea {
   width: 47%;
   height: 3em;
-  text-indent: .5em;
-  border: .1em solid #ddd;
+  text-indent: 0.5em;
+  border: 0.1em solid #ddd;
   border-radius: 4px;
   outline-color: #1abc9c;
 }

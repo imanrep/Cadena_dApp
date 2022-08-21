@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { connectAccount, checkLogin } from "./web3/connect";
+import Link from 'next/link'
 
 export default function Header({ p }) {
     const [walletModal, setWalletModal] = useState(false)
@@ -39,6 +40,15 @@ export default function Header({ p }) {
         <>
             <div className="header">
                 <div className="content">
+                <div className="head-left">
+
+               <Link href="/">
+               <p>Home</p>
+               </Link>
+               <Link href="/token">
+               <p>Asep Token</p>
+               </Link>
+           </div>
                     <div className="connect pointer" onClick={() => !connected && setWalletModal(!walletModal)}><span>{connected ? blurAddress : "Connect"}</span></div>
                 </div>
             </div>
